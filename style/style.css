@@ -1,0 +1,23 @@
+/* Global resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* General Style */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* DON'T CHANGE ANYTHING ABOVE THIS LINE */
+/* Your Custom CSS Goes below this line */
+
+/* If you want to change the font, 
+set the new font inside * tag at the top of the file */
