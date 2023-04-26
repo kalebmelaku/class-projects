@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ul{
     list-style: none;
@@ -21,3 +22,79 @@ a{
 
 /* If you want to change the font, 
 set the new font inside * tag at the top of the file */
+
+body{
+    background-color: #7993C7;
+}
+header{
+    background-color: #0D47C1;
+    color: #fff;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+ul{
+    display: flex;
+}
+ul li a{
+    color: #fff;
+    font-size: 20px;
+}
+ul li{
+    margin-left: 25px;
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 0;
+}
+.hero-section h3{
+    font-size: 52px;
+}
+.hero-section p{
+    font-size: 18px;
+    padding: 15px 0;
+    width: 70%;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0;
+    width: 100%;
+}
+.flex-item{
+    background: #0D47C1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.flex-item h4{
+    text-align: center;
+    font-size: 20px;
+}
+.flex-item:nth-child(2){
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.flex-item p{
+    line-height: 25px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0D47C1;
+}
+.footer-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #fff;
+}
