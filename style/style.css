@@ -6,3 +6,125 @@
     text-decoration: none;
     font-family: 'Lato', sans-serif;
 }
+
+.container {
+    position: relative;
+}
+
+.container .blue {
+    background-color: #4bccf7;
+    height: 50vh;
+    width: 100%;
+}
+
+.container .white {
+    background-color: #fff;
+    height: 50vh;
+    width: 100%;
+}
+
+.container .card {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 30px;
+    box-shadow: 14px 16px 45px 0px rgba(153, 153, 153, 0.34);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+
+.card .img-container {
+    /* background-color: #fff; */
+    cursor: pointer;
+    width: 100%;
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: width .2s;
+}
+
+.card .text-container {
+    background-color: #4bccf7;
+    width: 0%;
+    /* width: 50%; */
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    color: #fff;
+    display: none;
+    transition: all .5 ;
+}
+
+.img-container img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.text-container div>p,
+.text-container div>ul {
+    padding: 5px 0;
+}
+
+.text-container .title,
+.text-container .detail,
+.text-container ul {
+    margin-bottom: 20px;
+}
+
+.text-container .size ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-container .size ul p {
+    margin-top: 10px;
+    border: 1px solid #fff;
+    padding: 5px;
+    transition: all .3s;
+}
+
+.text-container .size ul p:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.text-container .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.card:hover .img-container {
+    width: 50%;
+}
+
+.card:hover img {
+    transform: rotate(-25deg);
+}
+
+.card:hover .text-container {
+    width: 50%;
+    display: block;
+    /* visibility: visible; */
+}
